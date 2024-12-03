@@ -1,4 +1,4 @@
-#ERD Diagram Requirements
+# ERD Diagram Requirements
 
 ## Entities and Attributes
 

@@ -67,3 +67,11 @@ CREATE TABLE messages (
     FOREIGN KEY (sender_id) REFERENCES users(user_id),
     FOREIGN KEY (recipient_id) REFERENCES users(user_id)
 );
+
+CREATE INDEX idx_users_email ON users(email);
+
+CREATE INDEX idx_properties_property_id ON properties(property_id);
+CREATE INDEX idx_bookings_property_id ON bookings(property_id);
+
+CREATE INDEX idx_booking_booking_id ON bookings(booking_id);
+CREATE INDEX idx_payment_booking_id ON payments(booking_id);
